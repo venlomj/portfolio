@@ -1,4 +1,5 @@
-import React, { Children, FC, ReactNode } from "react";
+"use client";
+import React, { FC, ReactNode } from "react";
 import WaterWave from "react-water-wave";
 
 interface WatarWaveWrapperprops {
@@ -14,6 +15,7 @@ const WatarWaveWrapper: FC<WatarWaveWrapperprops> = ({
   dropRadius,
   perturbance,
   resolution,
+  children,
 }) => {
   return (
     <WaterWave
@@ -22,7 +24,7 @@ const WatarWaveWrapper: FC<WatarWaveWrapperprops> = ({
       perturbance={perturbance}
       resolution={resolution}
     >
-      {Children}
+      {children}
     </WaterWave>
   );
 };
