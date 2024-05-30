@@ -14,7 +14,6 @@ const LiveClock: FC<LiveClockProps> = ({ timeZone }) => {
       const currentTime = moment().tz(timeZone).format("HH:mm");
       setTime(currentTime);
     };
-
     const interval = setInterval(updateClock, 1000);
 
     //cleanup interval on component unmount
@@ -28,7 +27,7 @@ const LiveClock: FC<LiveClockProps> = ({ timeZone }) => {
     >
       {time ? (
         <div className="flex items-center justify-center gap-[0.5vw]">
-          <span>{timeZone.split("/")[1]}</span>
+          <span>{timeZone.split("/")[1]}, </span>
           <span>{time}</span>
         </div>
       ) : (

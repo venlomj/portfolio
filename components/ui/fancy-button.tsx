@@ -12,7 +12,7 @@ const FancyButton: FC<FancyButtonProps> = ({ icon, text }) => {
         className="group bg-black hover:bg-transparent
      text-primary-foreground
      hover:text-black rounded-[108em]
-     py-[1vw] px-[2vw] flex items-center
+     py-5 px-10 flex items-center
      gap-2 font-bold text-3xl
      cursor-pointer transition-all duration-75"
       >
