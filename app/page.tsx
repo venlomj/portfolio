@@ -5,6 +5,7 @@ import LiveClock from "@/components/ui/live-clock";
 import MagneticWrapper from "@/components/visual-effects/magnetic-wrapper";
 import ScrollDown from "@/components/ui/scroll-down";
 import LandingSection from "@/sections/landing";
+import FeaturedSection from "@/sections/featured";
 
 export default function Home() {
   return (
@@ -15,8 +16,9 @@ export default function Home() {
       resolution="2048"
     >
       {() => (
-        <div>
-          <LandingSection />
+        <div className="pb-8">
+          {/* <LandingSection /> */}
+          <FeaturedSection />
         </div>
       )}
     </WatarWaveWrapper>

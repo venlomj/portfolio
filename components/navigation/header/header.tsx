@@ -1,5 +1,5 @@
 import FancyButton from "@/components/ui/fancy-button";
-import Profile from "@/components/ui/profile";
+import Profile from "@/components/ui/Profile";
 import MagneticWrapper from "@/components/visual-effects/magnetic-wrapper";
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
