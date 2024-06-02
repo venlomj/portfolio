@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { featuredData } from "@/api";
+import { featuredData } from "@/data";
 
 interface HeaderProps {
   title: string;

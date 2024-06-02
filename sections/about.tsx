@@ -1,6 +1,13 @@
+import Background from "@/components/cards/background";
+import CertificationCard from "@/components/cards/certification";
+import EducationCard from "@/components/cards/education";
+import ExperienceCard from "@/components/cards/experience";
+import InstructorCard from "@/components/cards/instructor";
+import ResumeCard from "@/components/cards/resume";
 import VenlomjCard from "@/components/cards/venlomj";
 import Heading from "@/components/heading/heading";
 import Card from "@/components/ui/Card";
+import Gallery from "@/components/ui/gallery";
 import React from "react";
 
 export default function AboutSection() {
@@ -11,27 +18,24 @@ export default function AboutSection() {
         <div className="space-y-4 md:grid md:grid-cols-2 md:gap-4 md:space-y-0 2xl:grid-cols-3">
           {/* Me Card */}
           <VenlomjCard />
-          <Card title="Me">Me</Card>
-          <Card title="Resume">Resume</Card>
-          <Card title="Background">Background</Card>
-          <Card title="Gallery" className="2xl:hidden">
-            Gallery
-          </Card>
+          <ResumeCard />
+          <Background />
+          <div className="2xl:hidden">
+            <Gallery />
+          </div>
         </div>
         <div className="space-y-4 md:grid md:grid-cols-2 md:gap-4 md:space-y-0 2xl:grid-cols-3">
           <div className="space-y-4">
-            <Card title="Instructor">Instructor</Card>
-            <Card title="Certifications">Certifications</Card>
+            <InstructorCard />
+            <CertificationCard />
           </div>
           <div className="space-y-4">
             <Card title="Stack">Stack</Card>
-            <Card title="Experience">Experience</Card>
-            <Card title="Education">Education</Card>
+            <ExperienceCard />
+            <EducationCard />
           </div>
           <div className="hidden 2xl:flex">
-            <Card title="Gallery" className="2x:hidden">
-              Gallery
-            </Card>
+            <Gallery />
           </div>
         </div>
       </div>

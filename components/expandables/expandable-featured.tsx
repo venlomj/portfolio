@@ -1,4 +1,4 @@
-import { featuredData } from "@/api";
+import { featuredData } from "@/data";
 import React, { useState } from "react";
 import FeaturedCard from "../cards/featured/featured-card";
 import { cn } from "@/lib/utils";

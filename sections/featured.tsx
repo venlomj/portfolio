@@ -1,5 +1,5 @@
 import Heading from "@/components/heading/heading";
-import { featuredData } from "@/api";
+import { featuredData } from "@/data";
 import FeaturedCard from "@/components/cards/featured/featured-card";
 import ExpandableFeatured from "@/components/expandables/expandable-featured";
 
