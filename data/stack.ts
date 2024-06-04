@@ -6,12 +6,12 @@ import ReactImg from "@/public/assets/images/stack/react.png";
 import AngularImg from "@/public/assets/images/stack/Angular.png";
 import VueJsImg from "@/public/assets/images/stack/Vue.png";
 import NextJsImg from "@/public/assets/images/stack/next-js.png";
-import ExpressJsImg from "@/public/assets/images/stack/ex.png";
+import ExpressJsImg from "@/public/assets/images/stack/node.png";
 import SassImg from "@/public/assets/images/stack/sass.png";
 import BsImg from "@/public/assets/images/stack/bootstrap.png";
 import TailImg from "@/public/assets/images/stack/tailwind.png";
 import AspImg from "@/public/assets/images/stack/NET_Core.png";
-import SpBImg from "@/public/assets/images/stack/NET_Core.png";
+import SpBImg from "@/public/assets/images/stack/spring-boot-logo.png";
 import FastImg from "@/public/assets/images/stack/fastapi.png";
 import LaraImg from "@/public/assets/images/stack/laravel.png";
 import PythonImg from "@/public/assets/images/stack/Python-logo.png";
@@ -19,6 +19,7 @@ import JavaImg from "@/public/assets/images/stack/java.png";
 import CSharpImg from "@/public/assets/images/stack/Cs.png";
 import PHPImg from "@/public/assets/images/stack/php.png";
 import LnxImg from "@/public/assets/images/stack/linux.png";
+import DockerImg from "@/public/assets/images/stack/Docker.png";
 
 const stackData = [
   {
@@ -76,6 +77,12 @@ const stackData = [
         id: 9,
         title: "Linux",
         image: LnxImg,
+        bgColor: "",
+      },
+      {
+        id: 10,
+        title: "Docker",
+        image: DockerImg,
         bgColor: "",
       },
     ],

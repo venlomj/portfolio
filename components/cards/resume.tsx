@@ -7,7 +7,7 @@ import Socials from "../ui/socials";
 
 export default function ResumeCard() {
   return (
-    <Card className="md:h-full 2xl:h-fit">
+    <Card className="md:h-full">
       <p className="text-lg xl:text-2xl font-medium text-primary-foreground">
         3 jaar geleden ben ik naar België gekomen om IT te studeren en mij te
         verdiepen in het programmeren. Vorig jaar heb ik de Graduaatsopleiding,

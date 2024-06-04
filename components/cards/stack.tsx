@@ -1,5 +1,6 @@
 import { stackData } from "@/data";
 import Card from "../ui/Card";
+import Tooltip from "../ui/tooltip";
 
 export default function StackCard() {
   return (
@@ -14,6 +15,17 @@ export default function StackCard() {
             {/* Stack group */}
             <div className="h-auto flex-none break-words whitespace-pre">
               <p className="text-secondary-foreground">{stack.title}</p>
+            </div>
+            {/* Tooltip */}
+            <div className="flex gap-4">
+              {stack.stack.map((st) => (
+                <Tooltip
+                  key={st.id}
+                  title={st.title}
+                  image={st.image}
+                  bgColor={st.bgColor}
+                />
+              ))}
             </div>
           </div>
         ))}
