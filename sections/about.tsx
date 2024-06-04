@@ -4,6 +4,7 @@ import EducationCard from "@/components/cards/education";
 import ExperienceCard from "@/components/cards/experience";
 import InstructorCard from "@/components/cards/instructor";
 import ResumeCard from "@/components/cards/resume";
+import StackCard from "@/components/cards/stack";
 import VenlomjCard from "@/components/cards/venlomj";
 import Heading from "@/components/heading/heading";
 import Card from "@/components/ui/Card";
@@ -30,7 +31,7 @@ export default function AboutSection() {
             <CertificationCard />
           </div>
           <div className="space-y-4">
-            <Card title="Stack">Stack</Card>
+            <StackCard />
             <ExperienceCard />
             <EducationCard />
           </div>

@@ -3,6 +3,7 @@ import galleryPictures from "./gallery";
 import experienceData from "./experience";
 import educationData from "./education";
 import instructorData from "./instructor";
+import stackData from "./stack";
 
 export {
   featuredData,
@@ -10,4 +11,5 @@ export {
   experienceData,
   educationData,
   instructorData,
+  stackData,
 };
