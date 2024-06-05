@@ -4,6 +4,8 @@ import experienceData from "./experience";
 import educationData from "./education";
 import instructorData from "./instructor";
 import stackData from "./stack";
+import servicesOptions from "./services";
+import budgetOptions from "./budget";
 
 export {
   featuredData,
@@ -12,4 +14,6 @@ export {
   educationData,
   instructorData,
   stackData,
+  servicesOptions,
+  budgetOptions,
 };
