@@ -1,10 +1,15 @@
 import FancyButton from "@/components/ui/fancy-button";
 import Profile from "@/components/ui/Profile";
 import MagneticWrapper from "@/components/visual-effects/magnetic-wrapper";
-import React from "react";
+import React, { useState } from "react";
 import { FaArrowRight } from "react-icons/fa";
+import FullScreenMenu from "./full-screen-menu/full-screen-menu";
+import ToggleButton from "./full-screen-menu/toggle-button";
+import { AnimatePresence } from "framer-motion";
 
 export default function Header() {
+  const [open, setOpen] = useState<boolean>(false);
+
   return (
     <div className="w-full flex items-center justify-center md:justify-between">
       <Profile />
@@ -13,6 +18,12 @@ export default function Header() {
           <FancyButton text="Let's talk" icon={<FaArrowRight />} />
         </MagneticWrapper>
       </div>
+      {/* Toggle button */}
+      <ToggleButton open={open} setOpen={setOpen} />
+      {/* Full screen menu */}
+      <AnimatePresence mode="wait">
+        {open && <FullScreenMenu />}
+      </AnimatePresence>
     </div>
   );
 }
