@@ -3,6 +3,7 @@ import { menuSlide } from "./animation";
 import Curve from "./curve";
 import Profile from "@/components/ui/Profile";
 import NavLink from "./nav-link";
+import Link from "next/link";
 
 export default function FullScreenMenu() {
   return (
@@ -29,6 +30,29 @@ export default function FullScreenMenu() {
             {navItems.map((item, index) => (
               <NavLink key={index} data={{ ...item, index }} />
             ))}
+          </div>
+        </div>
+      </div>
+      {/* Footer Links */}
+      <div className="w-[95%] pl-[5%] absolute bottom-8">
+        <div className="flex flex-wrap items-center justify-between uppercase text-white">
+          {/* Left side */}
+          <div className="flex items-center gap-4">
+            <Link href="/">LEGAL NOTICE</Link>
+            <Link href="/">404</Link>
+            <Link href="/">LEGALSTYLE</Link>
+          </div>
+          {/* Middle side */}
+          <div className="flex items-center gap-4">
+            <Link href="/">LINKEDIN</Link>
+            <Link href="/">UDEMY</Link>
+            <Link href="/">YOUTUBE</Link>
+            <Link href="/">INSTAGRAM</Link>
+            <Link href="/">TWITTER</Link>
+          </div>
+          {/* Right side */}
+          <div className="flex items-center gap-4">
+            <Link href="/">© 2024</Link>
           </div>
         </div>
       </div>
