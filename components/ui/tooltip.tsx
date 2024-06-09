@@ -13,7 +13,7 @@ const Tooltip: FC<TooltipProps> = ({ title, image, bgColor }) => {
   return (
     <div
       className={cn(
-        "link relative bg-[#2D2C33]w-10 h-10 transform cursor-pointer grid place-items-center",
+        "link relative bg-[#2D2C33] w-10 h-10 transform cursor-pointer grid place-items-center",
         "border border-border rounded-lg",
         "hover:scale-110 transition-all duration-200"
       )}

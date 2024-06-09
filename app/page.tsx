@@ -8,6 +8,8 @@ import LandingSection from "@/sections/landing";
 import FeaturedSection from "@/sections/featured";
 import AboutSection from "@/sections/about";
 import ContactSection from "@/sections/contact";
+import InternshipSection from "@/sections/internship";
+import Navbar from "@/components/navigation/nav/Navbar";
 
 export default function Home() {
   return (
@@ -19,9 +21,10 @@ export default function Home() {
     >
       {() => (
         <div className="pb-8">
-          {/* <LandingSection /> */}
-          {/* <FeaturedSection /> */}
-          {/* <AboutSection /> */}
+          {/* <Navbar /> */}
+          <LandingSection />
+          <AboutSection />
+          <InternshipSection />
           <ContactSection />
         </div>
       )}

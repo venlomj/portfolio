@@ -5,7 +5,7 @@ import educationData from "@/data/education";
 
 export default function EducationCard() {
   return (
-    <Card title="My Education">
+    <Card title="Mijn studies">
       <Timeline>
         {educationData.map((edu, i) => (
           <TimelineItem

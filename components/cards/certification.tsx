@@ -5,7 +5,7 @@ import certificationData from "@/data/certification";
 
 export default function CertificationCard() {
   return (
-    <Card title="My Certifications">
+    <Card title="Mijn Diploma's">
       <Timeline>
         {certificationData.map((cert, i) => (
           <TimelineItem

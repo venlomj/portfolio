@@ -3,7 +3,7 @@ import { featuredData } from "@/data";
 
 interface HeaderProps {
   title: string;
-  tag: string;
+  tag?: string;
 }
 
 const Header: FC<HeaderProps> = ({ title, tag }) => {

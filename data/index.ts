@@ -3,9 +3,13 @@ import galleryPictures from "./gallery";
 import experienceData from "./experience";
 import educationData from "./education";
 import instructorData from "./instructor";
-import stackData from "./stack";
+import hardSkillsData from "./hard-skills";
+import softSkills from "./soft-skills";
 import servicesOptions from "./services";
 import budgetOptions from "./budget";
+import myHobbies from "./hobbies";
+import { internshipData } from "./internship";
+import reportsData from "./reports";
 
 export {
   featuredData,
@@ -13,7 +17,11 @@ export {
   experienceData,
   educationData,
   instructorData,
-  stackData,
+  hardSkillsData,
+  softSkills,
   servicesOptions,
   budgetOptions,
+  myHobbies,
+  internshipData,
+  reportsData,
 };

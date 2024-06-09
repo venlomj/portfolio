@@ -2,6 +2,7 @@ import Image from "next/image";
 import Card from "../ui/Card";
 import MyImg from "@/public/assets/images/gallery/ik.jpg";
 import { cn } from "@/lib/utils";
+import Tag from "../util/tag";
 
 export default function VenlomjCard() {
   return (
@@ -34,10 +35,10 @@ export default function VenlomjCard() {
   );
 }
 
-const Tag = ({ text, className }: { text: string; className: string }) => {
-  return (
-    <div className={cn("bg-black/[0.7] w-fit py-1.5 px-3", className)}>
-      <p className="text-primary-foreground leading-[110%] font-bold">{text}</p>
-    </div>
-  );
-};
+// const Tag = ({ text, className }: { text: string; className: string }) => {
+//   return (
+//     <div className={cn("bg-black/[0.7] w-fit py-1.5 px-3", className)}>
+//       <p className="text-primary-foreground leading-[110%] font-bold">{text}</p>
+//     </div>
+//   );
+// };

@@ -1,3 +1,4 @@
+import Hero from "@/components/hero";
 import Header from "@/components/navigation/header/header";
 import FancyButton from "@/components/ui/fancy-button";
 import LiveClock from "@/components/ui/live-clock";
@@ -25,7 +26,7 @@ export default function LandingSection() {
         <LiveClock timeZone="Europe/Brussels" />
       </div>
       {/* Slogan */}
-      <div
+      {/* <div
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mt-8 leading-[14vw]
        lg:leading-[10vw] 2xl:leading-[9rem] font-medium h-[40rem] tracking-[-0.3rem]"
       >
@@ -56,7 +57,8 @@ export default function LandingSection() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+      <Hero />
       {/* Magnetic scroll */}
       <MagneticWrapper className="absolute left-1/2 -translate-x-1/2 bottom-[8rem] md:bottom-[4rem] 2xl:bottom-10">
         <ScrollDown />
