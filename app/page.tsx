@@ -1,5 +1,4 @@
 "use client";
-import WatarWaveWrapper from "@/components/visual-effects/watar-wave-wrapper";
 import FancyButton from "@/components/ui/fancy-button";
 import LiveClock from "@/components/ui/live-clock";
 import MagneticWrapper from "@/components/visual-effects/magnetic-wrapper";
@@ -10,6 +9,13 @@ import AboutSection from "@/sections/about";
 import ContactSection from "@/sections/contact";
 import InternshipSection from "@/sections/internship";
 import Navbar from "@/components/navigation/nav/Navbar";
+import dynamic from "next/dynamic";
+
+// This make sure the WatarWaveWrapper is only used in the client-side
+const WatarWaveWrapper = dynamic(
+  () => import("@/components/visual-effects/watar-wave-wrapper"),
+  { ssr: false }
+);
 
 export default function Home() {
   return (
