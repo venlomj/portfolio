@@ -12,7 +12,7 @@ export default function InternshipSection() {
   return (
     <div className="pt-24 px-3 lg:px-8 text-primary-foreground">
       {/* Heading */}
-      <Heading number="01" title1="Mijn" title2="Stage" />
+      <Heading number="02" title1="Mijn" title2="Stage" />
 
       <InternshipCard
         id={MainInternship.id}

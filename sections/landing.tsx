@@ -16,7 +16,7 @@ export default function LandingSection() {
       {/* Header */}
       <Header />
       {/* Show magnetic fancy-button on small screen and hide it on md screen */}
-      <div className="absolute bottom-36 left-10 z-20 md:hidden">
+      <div className="absolute bottom-36 left-10 z-20 !md:hidden sm:hidden">
         <MagneticWrapper>
           <FancyButton text="Let's talk" icon={<FaArrowRight />} />
         </MagneticWrapper>
@@ -60,7 +60,7 @@ export default function LandingSection() {
       </div> */}
       <Hero />
       {/* Magnetic scroll */}
-      <MagneticWrapper className="absolute left-1/2 -translate-x-1/2 bottom-[8rem] md:bottom-[4rem] 2xl:bottom-10">
+      <MagneticWrapper className="absolute left-1/2 -translate-x-1/2 bottom-[8rem] md:bottom-[4rem] xs:bottom-[8rem] 2xl:bottom-10 xs:">
         <ScrollDown />
       </MagneticWrapper>
     </div>

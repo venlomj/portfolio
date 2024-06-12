@@ -16,7 +16,7 @@ import SoftSkills from "@/components/cards/soft-skills";
 export default function AboutSection() {
   return (
     <div className="pt-24 px-3 lg:p-8">
-      <Heading number="02" title1="Over" title2="Mij" />
+      <Heading number="01" title1="Over" title2="Mij" />
       <div className="space-y-4 py-8">
         <div className="space-y-4 md:grid md:grid-cols-2 md:gap-4 md:space-y-0 2xl:grid-cols-3">
           {/* Me Card */}

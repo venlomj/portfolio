@@ -26,7 +26,7 @@ export default function MenuCard() {
           <Link
             key={i}
             href={link.link}
-            className="text-[#fdf825] uppercase text-[25px] font-bold leading-[85%] transition-colors duration-75 hover:text-white"
+            className="text-[#fdf825] uppercase text-[52px] font-bold leading-[85%] transition-colors duration-75 hover:text-white"
           >
             {link.title}
           </Link>
