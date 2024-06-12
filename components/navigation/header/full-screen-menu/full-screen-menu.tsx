@@ -6,6 +6,14 @@ import NavLink from "./nav-link";
 import Link from "next/link";
 import MenuCard from "./menu-card";
 
+const navItems = [
+  { title: "HOME", href: "/" },
+  { title: "OVER MIJ", href: "#about" },
+  { title: "STAGE", href: "#internship" },
+  { title: "PROJECTEN", href: "#featured" },
+  { title: "CONTACT", href: "#contact" },
+];
+
 export default function FullScreenMenu() {
   return (
     <motion.div
@@ -40,22 +48,37 @@ export default function FullScreenMenu() {
       <div className="w-[95%] pl-[5%] absolute bottom-8">
         <div className="flex flex-wrap items-center justify-between uppercase text-white">
           {/* Left side */}
-          <div className="flex items-center gap-4">
+          {/* <div className="flex items-center gap-4">
             <Link href="/">LEGAL NOTICE</Link>
             <Link href="/">404</Link>
             <Link href="/">LEGALSTYLE</Link>
-          </div>
+          </div> */}
           {/* Middle side */}
           <div className="flex items-center gap-4">
-            <Link href="/">LINKEDIN</Link>
-            <Link href="/">UDEMY</Link>
-            <Link href="/">YOUTUBE</Link>
-            <Link href="/">INSTAGRAM</Link>
-            <Link href="/">TWITTER</Link>
+            <Link
+              href="https://www.linkedin.com/in/murrel-venlo-6552bb135/"
+              target="_blank"
+            >
+              LINKEDIN
+            </Link>
+            <Link
+              href="https://www.facebook.com/profile.php?id=100003079420833"
+              target="_blank"
+            >
+              FACEBOOK
+            </Link>
+            <Link href="https://www.instagram.com/murrel_mj/" target="_blank">
+              INSTAGRAM
+            </Link>
+            <Link href="https://twitter.com/venlomurrelpri" target="_blank">
+              TWITTER
+            </Link>
           </div>
           {/* Right side */}
           <div className="flex items-center gap-4">
-            <Link href="/">© 2024</Link>
+            <Link href="https://github.com/murrelvenlo" target="_blank">
+              © 2024
+            </Link>
           </div>
         </div>
       </div>
@@ -64,26 +87,3 @@ export default function FullScreenMenu() {
     </motion.div>
   );
 }
-
-const navItems = [
-  {
-    title: "Home",
-    href: "/",
-  },
-  {
-    title: "Featured",
-    href: "/#featured",
-  },
-  {
-    title: "About",
-    href: "/#about",
-  },
-  {
-    title: "Projects",
-    href: "/#projects",
-  },
-  {
-    title: "Contact",
-    href: "/#contact",
-  },
-];

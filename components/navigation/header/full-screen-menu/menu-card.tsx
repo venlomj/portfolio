@@ -4,14 +4,23 @@ import Link from "next/link";
 import React from "react";
 import ShadeImg from "@/public/assets/images/background/shade-img.jpg";
 
+const myLinks = [
+  { title: "OVER MIJ", link: "#about" },
+  { title: "MIJN ACHTERGROND", link: "#background" },
+  { title: "MIJN SKILLS", link: "#skills" },
+  { title: "MIJN STUDIES", link: "#studies" },
+  { title: "MIJN DIPLOMA'S", link: "#diplomas" },
+  { title: "Gallery", link: "#gallery" },
+];
+
 export default function MenuCard() {
   return (
     <div
       className="w-full h-auto min-h-[427px] gap-[70px]
-   bg-[#1e36ea] rounded-[10px] flex-col
-    justify-between items-start flex
-    relative overflow-hidden pt-10 px-[25px]
-    pb-5 shadow-md"
+      bg-[#1e36ea] rounded-[10px] flex-col
+      justify-between items-start flex
+      relative overflow-hidden pt-10 px-[25px]
+      pb-5 shadow-md"
     >
       {/* Header */}
       <div className="w-full flex relative justify-between items-center">
@@ -41,38 +50,3 @@ export default function MenuCard() {
     </div>
   );
 }
-
-const myLinks = [
-  {
-    title: "About",
-    link: "#about",
-  },
-  {
-    title: "Background",
-    link: "#about",
-  },
-  {
-    title: "Courses",
-    link: "#about",
-  },
-  {
-    title: "EXPERIENC",
-    link: "#about",
-  },
-  {
-    title: "EDUCATION",
-    link: "#about",
-  },
-  {
-    title: "CERTIFICATIONS",
-    link: "#about",
-  },
-  {
-    title: "TECK STACK",
-    link: "#about",
-  },
-  {
-    title: "Gallery",
-    link: "#about",
-  },
-];

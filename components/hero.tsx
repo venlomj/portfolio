@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Typewriter } from "react-simple-typewriter";
-import mj from "@/public/assets/images/profile/LogoMj.png";
+import mj from "@/public/assets/images/profile/my_profile.jpg";
 
 const Hero = () => {
   return (
@@ -38,8 +38,8 @@ const Hero = () => {
         <Image
           src={mj}
           alt="bg"
-          width={500}
-          height={500}
+          width={350}
+          height={350}
           className="w-auto rounded-full"
         />
       </div>
