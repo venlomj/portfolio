@@ -5,23 +5,49 @@ import Profile from "@/components/ui/Profile";
 import NavLink from "./nav-link";
 import Link from "next/link";
 import MenuCard from "./menu-card";
+import { useEffect, useState } from "react";
 
 const navItems = [
-  { title: "HOME", href: "/" },
+  { title: "HOME", href: "#landing" },
   { title: "OVER MIJ", href: "#about" },
   { title: "STAGE", href: "#internship" },
   { title: "PROJECTEN", href: "#featured" },
   { title: "CONTACT", href: "#contact" },
 ];
 
-export default function FullScreenMenu() {
+export default function FullScreenMenu({
+  isOpen,
+  setIsOpen,
+}: {
+  isOpen: any;
+  setIsOpen: any;
+}) {
+  //const [isOpen, setIsOpen] = useState<boolean>(true); // Set initial value to true for testing
+  const [isClicked, setIsClicked] = useState<boolean>(false);
+
+  useEffect(() => {
+    if (!isOpen) {
+      setIsOpen(false);
+    }
+  }, [isOpen, setIsOpen]);
+
+  const handleNavLinkClick = () => {
+    setIsClicked(true); // Set isClicked to true
+    setIsOpen(false); // Close the menu
+    console.log("Menu closed");
+  };
+
+  console.log(`Menu isOpen: ${isOpen}`); // Add logging for isOpen state
+
   return (
     <motion.div
       variants={menuSlide}
       initial="initial"
       animate="enter"
       exit="exit"
-      className="h-screen w-full bg-black fixed top-0 right-0 text-primary-foreground z-40 font-oswald"
+      className={`h-screen w-full bg-black fixed top-0 right-0 text-primary-foreground z-40 font-oswald ${
+        isOpen ? "block" : "hidden"
+      }`} // Use className to hide/show menu
     >
       <div className="relative w-full pl-[5%]">
         {/* Profile */}
@@ -37,7 +63,11 @@ export default function FullScreenMenu() {
         >
           <div className="pl-4 flex flex-col justify-end">
             {navItems.map((item, index) => (
-              <NavLink key={index} data={{ ...item, index }} />
+              <NavLink
+                key={index}
+                data={{ ...item, index }}
+                handleClick={handleNavLinkClick} // Pass handleNavLinkClick to NavLink
+              />
             ))}
           </div>
           {/* Menu about card */}
@@ -47,12 +77,6 @@ export default function FullScreenMenu() {
       {/* Footer Links */}
       <div className="w-[95%] pl-[5%] absolute bottom-8">
         <div className="flex flex-wrap items-center justify-between uppercase text-white">
-          {/* Left side */}
-          {/* <div className="flex items-center gap-4">
-            <Link href="/">LEGAL NOTICE</Link>
-            <Link href="/">404</Link>
-            <Link href="/">LEGALSTYLE</Link>
-          </div> */}
           {/* Middle side */}
           <div className="flex items-center gap-4">
             <Link

@@ -16,13 +16,13 @@ export default function LandingSection() {
       {/* Header */}
       <Header />
       {/* Show magnetic fancy-button on small screen and hide it on md screen */}
-      <div className="absolute bottom-36 left-10 z-20 !md:hidden sm:hidden">
+      <div className="absolute bottom-36 left-10 z-20 md:hidden">
         <MagneticWrapper>
           <FancyButton text="Let's talk" icon={<FaArrowRight />} />
         </MagneticWrapper>
       </div>
       {/* Live clock */}
-      <div className="absolute right-10 bottom-10">
+      <div className="absolute right-10 bottom-10 md:mt-6 sm:mt-6 xs:mt-6 sm:pt-4 !xs:translate-y-8 !sm:translate-y-8 !md:translate-y-8">
         <LiveClock timeZone="Europe/Brussels" />
       </div>
       {/* Slogan */}
@@ -58,11 +58,13 @@ export default function LandingSection() {
           </div>
         </div>
       </div> */}
-      <Hero />
+      <div className="mb-14 md:mt-20 sm:mt-20 xs:mt-20">
+        <Hero />
+      </div>
       {/* Magnetic scroll */}
-      <MagneticWrapper className="absolute left-1/2 -translate-x-1/2 bottom-[8rem] md:bottom-[4rem] xs:bottom-[8rem] 2xl:bottom-10 xs:">
+      {/* <MagneticWrapper className="absolute left-1/2 -translate-x-1/2 bottom-[8rem] md:bottom-[4rem] xs:bottom-[8rem] 2xl:bottom-10 !md:hidden sm:hidden xs:hidden xs:size-1">
         <ScrollDown />
-      </MagneticWrapper>
+      </MagneticWrapper> */}
     </div>
   );
 }

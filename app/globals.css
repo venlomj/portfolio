@@ -107,3 +107,7 @@ body {
 .swiper-pagination-bullet-active {
   background: #fff !important;
 }
+
+html {
+  scroll-behavior: smooth;
+}

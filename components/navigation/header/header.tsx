@@ -39,7 +39,7 @@ export default function Header() {
 
       {/* Full screen menu */}
       <AnimatePresence mode="wait">
-        {open && <FullScreenMenu />}
+        {open && <FullScreenMenu isOpen={open} setIsOpen={setOpen} />}
       </AnimatePresence>
     </div>
   );

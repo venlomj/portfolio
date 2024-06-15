@@ -28,10 +28,21 @@ export default function Home() {
       {() => (
         <div className="pb-8">
           {/* <Navbar /> */}
-          <LandingSection />
-          <AboutSection />
-          <InternshipSection />
-          <ContactSection />
+          <section id="landing">
+            <LandingSection />
+          </section>
+          <section id="about">
+            <AboutSection />
+          </section>
+          <section id="internship">
+            <InternshipSection />
+          </section>
+          <section id="featured">
+            <FeaturedSection />
+          </section>
+          <section id="contact">
+            <ContactSection />
+          </section>
         </div>
       )}
     </WatarWaveWrapper>
