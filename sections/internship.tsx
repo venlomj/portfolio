@@ -23,9 +23,9 @@ export default function InternshipSection() {
         description={MainInternship.description}
         info={MainInternship.info}
       />
-      <div className="mt-24">
+      {/* <div className="mt-24">
         <ExpandableFeatured />
-      </div>
+      </div> */}
     </div>
   );
 }

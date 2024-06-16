@@ -67,24 +67,24 @@ const hardSkillsData = [
         image: CSharpImg,
         bgColor: "",
       },
-      {
-        id: 6,
-        title: "PHP",
-        image: PHPImg,
-        bgColor: "",
-      },
-      {
-        id: 7,
-        title: "Linux",
-        image: LnxImg,
-        bgColor: "",
-      },
-      {
-        id: 8,
-        title: "Docker",
-        image: DockerImg,
-        bgColor: "",
-      },
+      // {
+      //   id: 6,
+      //   title: "PHP",
+      //   image: PHPImg,
+      //   bgColor: "",
+      // },
+      // {
+      //   id: 7,
+      //   title: "Linux",
+      //   image: LnxImg,
+      //   bgColor: "",
+      // },
+      // {
+      //   id: 8,
+      //   title: "Docker",
+      //   image: DockerImg,
+      //   bgColor: "",
+      // },
     ],
   },
   {

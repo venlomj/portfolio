@@ -1,4 +1,4 @@
-import { FC, ReactNode } from "react";
+import { FC, ReactNode, useState } from "react";
 import Header from "./header";
 import Video from "./video";
 
@@ -10,17 +10,15 @@ interface FeaturedCardProps {
   active: boolean;
 }
 
-const FeaturedCard: FC<FeaturedCardProps> = ({
-  logo,
-  title,
-  tag,
-  video,
-  active,
-}) => {
+const FeaturedCard: FC<FeaturedCardProps> = ({ logo, title, tag, video }) => {
+  const [isActive, setIsActive] = useState(false);
+
   return (
     <div
       className="link w-full h-full bg-secondary-background border border-border 
     shadow-lg rounded-3xl cursor-pointer flex flex-col gap-2 flex-nowrap p-2"
+      onMouseEnter={() => setIsActive(true)}
+      onMouseLeave={() => setIsActive(false)}
     >
       {/* Header */}
       <Header title={title} tag={tag} />
@@ -33,7 +31,7 @@ const FeaturedCard: FC<FeaturedCardProps> = ({
          border border-border rounded-3xl"
       >
         {/* Video */}
-        <Video video={video} active={active} />
+        <Video video={video} active={isActive} />
       </div>
     </div>
   );

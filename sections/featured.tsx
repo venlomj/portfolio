@@ -9,7 +9,7 @@ export default function FeaturedSection() {
   return (
     <div className="pt-24 px-3 lg:px-8">
       {/* Heading */}
-      <Heading number="01" title1="Featured" title2="Work" />
+      <Heading number="01" title1="Projecten" title2=" " />
       {/* Main featured Card */}
       <FeaturedCard
         active

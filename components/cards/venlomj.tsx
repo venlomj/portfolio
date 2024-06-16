@@ -9,11 +9,15 @@ export default function VenlomjCard() {
     <Card className="2xl:h-full">
       <div className="w-full h-[400px] sm:h-[500px] overflow-hidden">
         {/* Background image */}
-        <Image
-          src={MyImg}
-          alt="venlomj"
-          className="absolute top-0 bottom-0 right-0 h-full w-full object-cover"
-        />
+        <div className="absolute top-0 left-0 w-full h-full">
+          <Image
+            src={MyImg}
+            alt="venlomj"
+            layout="fill"
+            objectFit="cover"
+            objectPosition="center top" // Ensure top of the image is visible
+          />
+        </div>
         {/* Tag */}
         <div className="absolute top-[65%] space-y-2">
           <Tag

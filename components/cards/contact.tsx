@@ -6,8 +6,15 @@ interface ContactCardProps {
   icon: ReactNode;
   text: string;
   btnText: string;
+  onButtonClick: () => void;
 }
-const ContactCard: FC<ContactCardProps> = ({ title, icon, text, btnText }) => {
+const ContactCard: FC<ContactCardProps> = ({
+  title,
+  icon,
+  text,
+  btnText,
+  onButtonClick,
+}) => {
   return (
     <div
       className="bg-secondary-background border border-border rounded-lg

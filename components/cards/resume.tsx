@@ -15,7 +15,7 @@ export default function ResumeCard() {
   };
   return (
     <Card className="md:h-full">
-      <p className="text-lg xl:text-2xl font-medium text-primary-foreground">
+      <p className="text-lg xl:text-xl font-medium text-primary-foreground">
         Vijf jaar geleden ben ik naar België gekomen om IT te studeren en mij te
         verdiepen in het programmeren. Twee jaar geleden heb ik de
         Graduaatsopleiding, Programmeren succesvol afgerond en doe momenteel het

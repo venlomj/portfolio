@@ -42,22 +42,26 @@ export default function ContactSection() {
 
   return (
     <div className="pt-24 px-3 lg:px-8">
-      <Heading number="03" title1="Contact" title2="Me" />
+      <Heading number="03" title1="Contacteer" title2="Mij" />
       <Card>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Contact cards */}
           <div className="flex flex-col gap-8">
             <ContactCard
-              title="Call me directly at"
+              title="Bel mij direct"
               icon={<FaPhoneVolume className="fill-[#333] text-lg" />}
               text="+32 474 24 48 07"
-              btnText="Call me"
+              btnText="Bel mij op"
+              onButtonClick={() => (window.location.href = "tel:+32474244807")}
             />
             <ContactCard
-              title="Send me an email"
+              title="Stuur een email"
               icon={<MdEmail className="fill-[#333] text-lg" />}
               text="venlo.mj@hotmail.nl"
-              btnText="Email me"
+              btnText="Email mij"
+              onButtonClick={() =>
+                (window.location.href = "mailto:venlo.mj@hotmail.nl")
+              }
             />
           </div>
           {/* Contact form */}
@@ -70,13 +74,13 @@ export default function ContactSection() {
               <Input
                 name="name"
                 type="text"
-                placeholder="Full Name"
+                placeholder="Voornaam"
                 icon={<FaUser />}
               />
               <Input
                 type="email"
                 name="email"
-                placeholder="Email Address"
+                placeholder="Email"
                 icon={<MdEmail />}
               />
             </div>
@@ -84,7 +88,7 @@ export default function ContactSection() {
               <Input
                 name="subject"
                 type="text"
-                placeholder="Subject"
+                placeholder="Onderwerp"
                 icon={<MdSubject />}
               />
             </div>
@@ -92,7 +96,7 @@ export default function ContactSection() {
             <div className="flex flex-col gap-6">
               <div className="space-y-6">
                 <h1 className="font-bold text-lg">
-                  What services are in need for ?
+                  Welke diensten zijn nodig?
                 </h1>
                 <div className="flex flex-wrap items-center justify-between mb-4 gap-8">
                   {/* Services */}
@@ -113,7 +117,7 @@ export default function ContactSection() {
             {/* Multiple select wrapper */}
             <div className="flex flex-col gap-6">
               <div className="space-y-6">
-                <h1 className="font-bold text-lg">What is your budget ?</h1>
+                <h1 className="font-bold text-lg">Wat is uw budget ?</h1>
                 <div className="flex flex-wrap items-center justify-between mb-4 gap-8">
                   {/* Budget options */}
                   {budgetOptions.map((budget) => (
@@ -132,13 +136,13 @@ export default function ContactSection() {
             {/* TextArea message */}
             <TextArea
               name="message"
-              placeholder="Tell me about your project"
+              placeholder="Vertel me over je project"
               icon={<FaProjectDiagram />}
             />
             <div className="w-full flex justify-end">
               <div onClick={() => btnRef.current?.click()}>
                 <Button className="!w-44 !py-3 !text-xl">
-                  Send
+                  Verzenden
                   <SiMinutemailer />
                 </Button>
               </div>

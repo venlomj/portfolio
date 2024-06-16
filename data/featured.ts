@@ -2,41 +2,55 @@ import { title } from "process";
 
 const featuredData = [
   {
-    title: "Okarys",
+    title: "Project 4.0",
     logo: "",
     tag: "Feb 2024",
-    video:
-      "https://cdn.dribbble.com/userupload/3743863/file/original-ed64ce215ecf5f86ead7fedaca82c84c.mp4",
-    creadits: "Julia Dmitrievna",
-    link: "https://dribbble.com/shots/19587956-Okarys-Brand-Identity",
+    video: "https://youtu.be/lN8ehgiOM3Q",
+    creadits: "Team Eclipse",
+    link: "https://www.youtube.com/watch?v=lN8ehgiOM3Q",
+  },
+  // {
+  //   title: "Okarys",
+  //   logo: "",
+  //   tag: "Feb 2024",
+  //   video:
+  //     "https://cdn.dribbble.com/userupload/3743863/file/original-ed64ce215ecf5f86ead7fedaca82c84c.mp4",
+  //   creadits: "Julia Dmitrievna",
+  //   link: "https://dribbble.com/shots/19587956-Okarys-Brand-Identity",
+  // },
+  {
+    title: "Mobile Development",
+    logo: "",
+    tag: "Nov 2023",
+    video: "https://youtu.be/C3n6_zg5hpE",
+    creadits: "venlomj + Felix",
+    link: "https://www.youtube.com/watch?v=C3n6_zg5hpE",
   },
   {
-    title: "AI sphere visual design",
+    title: "Music Player",
     logo: "",
     tag: "Feb 2024",
-    video:
-      "https://cdn.dribbble.com/userupload/14652213/file/large-1c9c6dae98cfb7a7ec96dc5483e42e12.mp4",
-    creadits: "Milkinside",
-    link: "https://dribbble.com/shots/24197602-AI-sphere-visual-design-by-Milkinside",
+    video: "https://youtu.be/hLYs0Wexdwk",
+    creadits: "venlomj",
+    link: "https://www.youtube.com/watch?v=hLYs0Wexdwk",
   },
   {
-    title: "Swiss branding AVA Particles visual",
+    title: "Task manager Microservices",
     logo: "",
-    tag: "Sep 2023",
-    video:
-      "https://cdn.dribbble.com/userupload/9901557/file/large-7bd5634252a1f1485be741942fc932fb.mp4",
-    creadits: "Gleb Kuznetsov",
-    link: "https://dribbble.com/shots/22498207-Swiss-branding-AVA-Particles-visual",
+    tag: "Jan 2024",
+    video: "https://youtu.be/vNFlSuxuj8Q",
+    creadits: "venlomj",
+    link: "https://www.youtube.com/watch?v=vNFlSuxuj8Q",
   },
-  {
-    title: "Film Titles Transitions",
-    logo: "",
-    tag: "Dec 2023",
-    video:
-      "https://cdn.dribbble.com/userupload/14512073/file/large-1e99a3d35ad22f770329b1488ab88563.mp4",
-    creadits: "Algo",
-    link: "https://dribbble.com/shots/24149714-Film-Titles-Transitions",
-  },
+  // {
+  //   title: "Film Titles Transitions",
+  //   logo: "",
+  //   tag: "Dec 2023",
+  //   video:
+  //     "https://cdn.dribbble.com/userupload/14512073/file/large-1e99a3d35ad22f770329b1488ab88563.mp4",
+  //   creadits: "Algo",
+  //   link: "https://dribbble.com/shots/24149714-Film-Titles-Transitions",
+  // },
 ];
 
 export default featuredData;

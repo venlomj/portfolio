@@ -3,7 +3,7 @@ import Card from "../ui/Card";
 export default function Background() {
   return (
     <Card className="md:h-full" title="Mijn Achtergrond">
-      <h2>Over Mij</h2>
+      <h2 className="text-lg xl:text-xl font-medium">Over Mij</h2>
       <p>
         Welkom op mijn website! Ik ben&nbsp;
         <strong className="underline text-white">Murrel Venlo</strong>,
