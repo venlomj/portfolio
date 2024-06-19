@@ -43,7 +43,7 @@ export default function ContactSection() {
 
   return (
     <div className="pt-24 px-3 lg:px-8">
-      <Heading number="03" title1="Contacteer" title2="Mij" />
+      <Heading number="04" title1="Contacteer" title2="Mij" />
       <Card>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Contact cards */}
