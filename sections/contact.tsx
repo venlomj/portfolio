@@ -51,7 +51,7 @@ export default function ContactSection() {
             <ContactCard
               title="Bel mij direct"
               icon={<FaPhoneVolume className="fill-[#333] text-lg" />}
-              text="+32 474 24 48 07"
+              text="+32 474 24 ** **"
               btnText="Bel mij op"
               onButtonClick={() => (window.location.href = "tel:+32474244807")}
             />

@@ -12,6 +12,7 @@ import Gallery from "@/components/ui/gallery";
 import Hobby from "@/components/ui/hobby";
 import React from "react";
 import SoftSkills from "@/components/cards/soft-skills";
+import { FiArrowUpRight } from "react-icons/fi";
 
 export default function AboutSection() {
   return (
@@ -40,6 +41,17 @@ export default function AboutSection() {
           <div className="hidden 2xl:flex">
             <Hobby />
           </div>
+        </div>
+        {/* Fancy link */}
+        <div className="mt-12 text-center">
+          <a
+            href="https://venlomj.sinners.be/"
+            target="_blank"
+            className="inline-block mt-8 text-primary-foreground transition-colors duration-300 hover:text-accent hover:bg-secondary-background focus:text-accent focus:bg-secondary-background rounded-full py-1 px-4"
+          >
+            Wil je meer weten over mij, klik hier{" "}
+            <FiArrowUpRight className="inline-block ml-1" size={18} />
+          </a>
         </div>
       </div>
     </div>
