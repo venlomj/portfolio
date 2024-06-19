@@ -11,6 +11,7 @@ import { budgetOptions, servicesOptions } from "@/data";
 import { FormEvent, useRef, useState } from "react";
 import SelectInput from "@/components/ui/select-input";
 import emailjs from "@emailjs/browser";
+import ButtonMailto from "@/components/ui/ButtonMailto";
 
 export default function ContactSection() {
   const formRef = useRef<HTMLFormElement>(null!);
@@ -59,9 +60,8 @@ export default function ContactSection() {
               icon={<MdEmail className="fill-[#333] text-lg" />}
               text="venlo.mj@hotmail.nl"
               btnText="Email mij"
-              onButtonClick={() =>
-                (window.location.href = "mailto:venlo.mj@hotmail.nl")
-              }
+              mailto="mailto:venlo.mj@hotmail.nl"
+              onButtonClick={() => {}}
             />
           </div>
           {/* Contact form */}

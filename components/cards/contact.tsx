@@ -1,5 +1,7 @@
 import { FC, ReactNode } from "react";
 import Button from "../ui/Button";
+import ButtonMailto from "../ui/ButtonMailto";
+import { cn } from "@/lib/utils";
 
 interface ContactCardProps {
   title: string;
@@ -7,6 +9,8 @@ interface ContactCardProps {
   text: string;
   btnText: string;
   onButtonClick: () => void;
+  mailto?: string;
+  tel?: string;
 }
 const ContactCard: FC<ContactCardProps> = ({
   title,
@@ -14,6 +18,8 @@ const ContactCard: FC<ContactCardProps> = ({
   text,
   btnText,
   onButtonClick,
+  mailto,
+  tel,
 }) => {
   return (
     <div
@@ -32,7 +38,18 @@ const ContactCard: FC<ContactCardProps> = ({
         <div>
           <h2 className="font-bold text-2xl">{text}</h2>
         </div>
-        <Button className="!w-24">{btnText}</Button>
+        {mailto ? (
+          <ButtonMailto mailto={mailto} label={btnText} />
+        ) : (
+          <button
+            onClick={onButtonClick}
+            className={cn(
+              "flex items-center justify-center gap-2 bg-primary-background rounded-full select-none whitespace-nowrap text-primary-foreground text-sm font-medium hover:bg-white/[0.1] transition-colors duration-100 h-full w-max px-3 py-2 contact-button"
+            )}
+          >
+            {btnText}
+          </button>
+        )}
       </div>
     </div>
   );

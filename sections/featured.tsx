@@ -16,6 +16,8 @@ export default function FeaturedSection() {
         title={MainFeatured.title}
         tag={MainFeatured.tag}
         video={MainFeatured.video}
+        desc={MainFeatured.desc!}
+        client={MainFeatured.client!}
       />
       <div className="mt-24">
         <ExpandableFeatured />

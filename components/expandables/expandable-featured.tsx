@@ -35,6 +35,8 @@ export default function ExpandableFeatured() {
             title={feature.title}
             tag={feature.tag}
             video={feature.video}
+            desc={feature.desc}
+            client={feature.client}
           />
         </div>
       ))}

@@ -8,6 +8,8 @@ const featuredData = [
     video: "https://youtu.be/lN8ehgiOM3Q",
     creadits: "Team Eclipse",
     link: "https://www.youtube.com/watch?v=lN8ehgiOM3Q",
+    desc: "In groepsverband heb ik een busyness barometer ontwikkeld voor Axxes om de kantoorbezetting te voorspellen en in real-time te tonen. Dit wordt geïntegreerd in de Axxes App en Axxes Home, en maakt gebruik van data zoals geboekte vergaderzalen en historische gegevens.",
+    client: "AXXES",
   },
   // {
   //   title: "Okarys",
@@ -23,8 +25,10 @@ const featuredData = [
     logo: "",
     tag: "Nov 2023",
     video: "https://youtu.be/C3n6_zg5hpE",
-    creadits: "venlomj + Felix",
+    credits: "venlomj + Felix",
     link: "https://www.youtube.com/watch?v=C3n6_zg5hpE",
+    desc: "Samen met mijn teamgenoot heb ik een mobiele app ontwikkeld met Augmented Reality (AR) voor verbeterde interacties met frisdranken. Gebruikers kunnen etiketten scannen voor extra info, producten beoordelen en hun collectie beheren. We implementeerden de AR-ervaring in de eerste app, Wikitude, waar gebruikers frisdranketiketten scannen voor gedetailleerde productinformatie en via een AR-overlay gegevens zoals herkomst en ingrediënten in de echte wereld kunnen bekijken en beoordelingen kunnen toevoegen. De tweede app vult dit aan met een homepagina, een overzicht van dranken met gebruikersbeoordelingen, gedetailleerde pagina's voor elke drank inclusief een inventaris van gescande items, en een backend ontwikkeld met Express.js. Dit project combineert geavanceerde AR-technologieën en mobiele mogelijkheden om gebruikers een interactieve ervaring te bieden bij het verkennen, beoordelen en beheren van frisdranken.",
+    client: "De leerkracht van Mobile Development in Flutter",
   },
   {
     title: "Music Player",
@@ -33,6 +37,8 @@ const featuredData = [
     video: "https://youtu.be/hLYs0Wexdwk",
     creadits: "venlomj",
     link: "https://www.youtube.com/watch?v=hLYs0Wexdwk",
+    desc: "Voor mijn Proeve van Professionaliteit (PPP) moest ik een cursus kiezen en een opdracht uitvoeren. Ik heb gekozen voor het ontwikkelen van een muziek-applicatie in Vue.js. In deze opdracht heb ik een muziek-applicatie gebouwd! Hiermee kunnen gebruikers muziek uploaden, beheren en beluisteren zonder onderbrekingen. Ik heb TailwindCSS gebruikt om mij te helpen bij het ontwerpen van een prachtige moderne applicatie. TailwindCSS is de nieuwkomer die omarmd wordt door de front-end ontwikkelgemeenschap. Vervolgens heb ik meer geleerd over state management door gebruik te maken van de officiële state library genaamd PINIA, die Vuex vervangt in nieuwere codebases.",
+    client: "De leerkracht van Professional Skills",
   },
   {
     title: "Task manager Microservices",
@@ -41,6 +47,8 @@ const featuredData = [
     video: "https://youtu.be/vNFlSuxuj8Q",
     creadits: "venlomj",
     link: "https://www.youtube.com/watch?v=vNFlSuxuj8Q",
+    desc: "Voor het vak Enterprise Development Experience heb ik een microservicegebaseerde backend ontwikkeld voor takenbeheer. Het systeem biedt functionaliteiten voor het aanmaken, toewijzen en beheren van taken binnen teams, inclusief notificaties via e-mail. De implementatie omvat OAuth2 authenticatie, robuuste beveiligingsmaatregelen en schaalbaarheidsoplossingen voor betrouwbaarheid.",
+    client: "De leerkracht van Enterprise Development Experience",
   },
   // {
   //   title: "Film Titles Transitions",
