@@ -77,7 +77,7 @@ export default function FullScreenMenu({
       {/* Footer Links */}
       <div className="w-[95%] pl-[5%] absolute bottom-8">
         <div className="flex flex-wrap items-center justify-between uppercase text-white">
-          {/* Middle side */}
+          {/*----Left--------------*/}
           <div className="flex items-center gap-4">
             <Link
               href="https://www.linkedin.com/in/murrel-venlo-6552bb135/"
@@ -98,11 +98,15 @@ export default function FullScreenMenu({
               TWITTER
             </Link>
           </div>
-          {/* Right side */}
+          {/*----Middle--------------*/}
           <div className="flex items-center gap-4">
-            <Link href="https://github.com/murrelvenlo" target="_blank">
-              © 2024
+            <Link href="https://venlomj.sinners.be/" target="_blank">
+              VENLOMJ
             </Link>
+          </div>
+          {/*----rIGHT--------------*/}
+          <div className="flex items-center gap-4">
+            <Link href="/">©2024</Link>
           </div>
         </div>
       </div>

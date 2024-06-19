@@ -2,7 +2,7 @@ import { HeadingAnimatedSvg } from "@/components/heading/heading-animated-svg";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import ShadeImg from "@/public/assets/images/background/shade-img.jpg";
+import MyLogo from "@/public/assets/images/profile/LogoMj.png";
 
 const myLinks = [
   { title: "OVER MIJ", link: "#about" },
@@ -10,7 +10,7 @@ const myLinks = [
   { title: "MIJN SKILLS", link: "#skills" },
   { title: "MIJN STUDIES", link: "#studies" },
   { title: "MIJN DIPLOMA'S", link: "#diplomas" },
-  { title: "Gallery", link: "#gallery" },
+  { title: "Hobby’s", link: "#hobby" },
 ];
 
 export default function MenuCard() {
@@ -25,7 +25,7 @@ export default function MenuCard() {
       {/* Header */}
       <div className="w-full flex relative justify-between items-center">
         <div className="uppercase font-bold text-2xl text-white">
-          Who is Murrel ?
+          Wie is Murrel ?
         </div>
         <HeadingAnimatedSvg animated text="LEARN MORE ABOUT MURREL VENLO" />
       </div>
@@ -43,7 +43,7 @@ export default function MenuCard() {
       </div>
       {/* Image shade */}
       <Image
-        src={ShadeImg}
+        src={MyLogo}
         alt="Shade img"
         className="block w-full h-full mix-blend-overlay absolute top-0 right-0 left-0 bottom-0"
       />
