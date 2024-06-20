@@ -5,8 +5,7 @@ import MyPicture from "@/public/assets/images/profile/campnou.jpg";
 export default function Profile() {
   return (
     <a
-      href="https://venlomj.sinners.be/"
-      target="_blank"
+      href="https://venlomj.vercel.app/"
       rel="noopener noreferrer"
       className="flex items-center gap-x-2 transition-colors duration-75 text-primary-foreground"
     >
