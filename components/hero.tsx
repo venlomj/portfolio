@@ -17,8 +17,6 @@ const Hero = () => {
               "Een full stack developer",
               "Een Programmeur",
               "Een junior .NET Developer",
-              "Een junior Java Developer",
-              "Een React Developer",
             ]}
             loop={true}
             cursor
