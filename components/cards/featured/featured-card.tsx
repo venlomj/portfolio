@@ -2,6 +2,8 @@ import { FC, ReactNode, useState } from "react";
 import Header from "./header";
 import Video from "./video";
 import ProjectModal from "@/components/ui/modal/ProjectModal";
+import Image from "next/image";
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 interface FeaturedCardProps {
   logo?: ReactNode;
@@ -11,6 +13,7 @@ interface FeaturedCardProps {
   active: boolean;
   desc: string;
   client: string;
+  img?: string | StaticImport;
 }
 
 const FeaturedCard: FC<FeaturedCardProps> = ({
@@ -20,6 +23,7 @@ const FeaturedCard: FC<FeaturedCardProps> = ({
   video,
   desc,
   client,
+  img,
 }) => {
   const [isActive, setIsActive] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -58,6 +62,15 @@ const FeaturedCard: FC<FeaturedCardProps> = ({
         handleClose={handleCloseModal}
       >
         <dl className="my-3 shadow-md rounded-lg p-6 bg-secondary-background max-w-2xl mx-auto">
+          <div className="flex justify-center mb-4">
+            <Image
+              src={img!}
+              alt={title}
+              width={400}
+              height={200}
+              className="object-contain"
+            />
+          </div>
           <dt className="text-sm text-secondary-foreground mt-4 font-pixel">
             Opdracht
           </dt>
@@ -67,8 +80,6 @@ const FeaturedCard: FC<FeaturedCardProps> = ({
           </dt>
           <dd className="mt-2 text-base">{client}</dd>
         </dl>
-
-        {/* Include any additional details about the project */}
       </ProjectModal>
     </>
   );

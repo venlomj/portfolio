@@ -74,7 +74,7 @@ const ProjectModal: FC<ProjectModalProps> = ({
     <ReactPortal wrapperId="project-modal">
       <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
         <div className="absolute inset-0 bg-[#01010A] text-primary-foreground overflow-auto">
-          <div className="absolute top-4 right-8 text-white hover:text-gray-900">
+          {/* <div className="absolute top-4 right-8 text-white hover:text-gray-900">
             <button
               className="text-3xl leading-none"
               onClick={handleClose}
@@ -82,7 +82,7 @@ const ProjectModal: FC<ProjectModalProps> = ({
             >
               &times;
             </button>
-          </div>
+          </div> */}
           <Card className="w-full h-full flex flex-col p-0 items-center justify-center">
             <div className="p-6 flex-grow">
               {/* <div className="font-pixel uppercase text-lg border-b border-border pb-4 mb-4"> */}
