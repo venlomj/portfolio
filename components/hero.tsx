@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { Typewriter } from "react-simple-typewriter";
 import mj from "@/public/assets/images/profile/my_profile.jpg";
 

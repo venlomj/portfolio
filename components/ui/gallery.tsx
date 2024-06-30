@@ -3,7 +3,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper/modules";
 import { galleryPictures } from "@/data";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 export default function Gallery() {
   return (

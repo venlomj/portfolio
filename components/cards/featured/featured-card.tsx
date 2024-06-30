@@ -2,7 +2,7 @@ import { FC, ReactNode, useState } from "react";
 import Header from "./header";
 import Video from "./video";
 import ProjectModal from "@/components/ui/modal/ProjectModal";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 interface FeaturedCardProps {

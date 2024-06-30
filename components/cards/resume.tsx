@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Card from "../ui/Card";
 import SignatureImg from "@/public/assets/images/profile/signature.png";
 import Button from "../ui/Button";

@@ -1,6 +1,6 @@
 import { FC, useState } from "react";
 import Header from "./header";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import picture1 from "@/public/assets/images/interbship/Qubris_logo_white.png";
 import picture2 from "@/public/assets/images/interbship/applicatie.png";
 import ListItem from "@/components/ui/list-item";

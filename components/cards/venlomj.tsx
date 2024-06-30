@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Card from "../ui/Card";
 import MyImg from "@/public/assets/images/gallery/ik.jpg";
 import { cn } from "@/lib/utils";

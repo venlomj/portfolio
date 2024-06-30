@@ -1,5 +1,5 @@
 import { HeadingAnimatedSvg } from "@/components/heading/heading-animated-svg";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 import React from "react";
 import MyLogo from "@/public/assets/images/profile/LogoMj.png";
