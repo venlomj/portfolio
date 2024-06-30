@@ -1,5 +1,6 @@
 import { useState } from "react";
 import ProjectModal from "../ui/modal/ProjectModal";
+import { title } from "process";
 
 const Project = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -10,7 +11,11 @@ const Project = () => {
   return (
     <div>
       <button onClick={handleOpenModal}>Open Project Modal</button>
-      <ProjectModal isOpen={isModalOpen} handleClose={handleCloseModal}>
+      <ProjectModal
+        isOpen={isModalOpen}
+        handleClose={handleCloseModal}
+        title={title}
+      >
         <ul>
           <li>Achievements</li>
           <li>Hackathons, badges from online courses,...</li>
