@@ -1,5 +1,5 @@
 import { FC } from "react";
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 interface HeroButtonProps {
   type: "button" | "submit";
@@ -17,7 +17,15 @@ const HeroButton: FC<HeroButtonProps> = ({ type, title, icon, variant }) => {
       <label className="font-[500] whitespace-nowrap cursor-pointer">
         {title}
       </label>
-      {icon && <Image src={icon} alt={title} width={16} height={16} />}
+      {icon && <Image
+        src={icon}
+        alt={title}
+        width={16}
+        height={16}
+        style={{
+          maxWidth: "100%",
+          height: "auto"
+        }} />}
     </button>
   );
 };

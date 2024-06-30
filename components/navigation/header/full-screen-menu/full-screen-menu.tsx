@@ -4,7 +4,7 @@ import Curve from "./curve";
 import Profile from "@/components/ui/Profile";
 import NavLink from "./nav-link";
 import Link from "next/link";
-import MenuCard from "./menu-card";
+// import MenuCard from "./menu-card";
 import { useEffect, useState } from "react";
 
 const navItems = [
@@ -61,7 +61,7 @@ export default function FullScreenMenu({
           className="grid relative"
           style={{ gridTemplateColumns: "1fr 500px" }}
         >
-          <div className="pl-4 flex flex-col justify-end">
+          <div className="pl-8 flex flex-col justify-end">
             {navItems.map((item, index) => (
               <NavLink
                 key={index}
@@ -71,7 +71,7 @@ export default function FullScreenMenu({
             ))}
           </div>
           {/* Menu about card */}
-          <MenuCard />
+          {/* <MenuCard /> */}
         </div>
       </div>
       {/* Footer Links */}

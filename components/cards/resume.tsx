@@ -26,7 +26,14 @@ export default function ResumeCard() {
       </p>
       {/* Signature */}
       <div>
-        <Image src={SignatureImg} alt="venlomj" />
+        <Image
+          src={SignatureImg}
+          alt="venlomj"
+          style={{
+            maxWidth: "100%",
+            height: "auto",
+          }}
+        />
       </div>
       {/* Socials and resume btn*/}
       <div className="flex items-center justify-between md:bottom-6 md:left-6 md:w-[calc(100%-48px)]">

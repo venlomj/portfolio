@@ -29,11 +29,11 @@ export default function Header() {
   return (
     <div className="w-full flex items-center justify-center md:justify-between">
       <Profile />
-      <div className="hidden md:inline sm:hidden xs:hidden">
+      {/* <div className="hidden md:inline sm:hidden xs:hidden">
         <MagneticWrapper>
           <FancyButton text="Let's talk" icon={<FaArrowRight />} />
         </MagneticWrapper>
-      </div>
+      </div> */}
       {/* Toggle button */}
       {showToggle && <ToggleButton open={open} setOpen={setOpen} />}
 

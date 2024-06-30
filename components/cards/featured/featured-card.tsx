@@ -14,6 +14,7 @@ interface FeaturedCardProps {
   desc: string;
   client: string;
   img?: string | StaticImport;
+  info?: boolean;
 }
 
 const FeaturedCard: FC<FeaturedCardProps> = ({
@@ -35,21 +36,24 @@ const FeaturedCard: FC<FeaturedCardProps> = ({
     <>
       <div
         className="link w-full h-full bg-secondary-background border border-border 
-    shadow-lg rounded-3xl cursor-pointer flex flex-col gap-2 flex-nowrap p-2"
+  shadow-lg rounded-3xl cursor-pointer flex flex-col gap-2 flex-nowrap p-2"
         onMouseEnter={() => setIsActive(true)}
         onMouseLeave={() => setIsActive(false)}
       >
         {/* Header */}
-        <div onClick={handleOpenModal}>
-          <Header title={title} tag={tag} />
-        </div>
+        <Header
+          title={title}
+          tag={tag}
+          showInfoIcon={true}
+          onInfoClick={handleOpenModal}
+        />
         {/* Body */}
         <div
           className="relative flex
-       float-none flex-nowrap
-        p-6 w-full items-center
-         justify-center h-[550px]
-         border border-border rounded-3xl"
+     float-none flex-nowrap
+      p-6 w-full items-center
+       justify-center h-[550px]
+       border border-border rounded-3xl"
         >
           {/* Video */}
           <Video video={video} active={isActive} />
@@ -69,6 +73,10 @@ const FeaturedCard: FC<FeaturedCardProps> = ({
               width={400}
               height={200}
               className="object-contain"
+              style={{
+                maxWidth: "100%",
+                height: "auto",
+              }}
             />
           </div>
           <dt className="text-sm text-secondary-foreground mt-4 font-pixel">

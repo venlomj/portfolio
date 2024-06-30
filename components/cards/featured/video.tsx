@@ -15,7 +15,6 @@ const Video: FC<VideoProps> = ({ video, active }) => {
         videoRef.current.play();
       } else {
         videoRef.current.pause();
-        videoRef.current.currentTime = 0;
       }
     }
   }, [active]);
@@ -29,7 +28,7 @@ const Video: FC<VideoProps> = ({ video, active }) => {
         <iframe
           src={`https://www.youtube.com/embed/${getYouTubeVideoId(
             video
-          )}?autoplay=${active ? 1 : 0}&mute=1&loop=1`}
+          )}?autoplay=${active ? 1 : 1}&mute=1&loop=1`}
           className={cn(
             "h-full w-full object-cover rounded-3xl",
             active ? "" : "grayscale"
@@ -42,12 +41,17 @@ const Video: FC<VideoProps> = ({ video, active }) => {
         <video
           src={video}
           ref={videoRef}
-          loop={active}
           muted
+          loop
           className={cn(
             "h-full w-full object-cover rounded-3xl",
             active ? "" : "grayscale"
           )}
+          onPlay={() => {
+            if (!active && videoRef.current) {
+              videoRef.current.pause();
+            }
+          }}
         />
       )}
     </div>

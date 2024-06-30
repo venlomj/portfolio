@@ -1,6 +1,6 @@
 import React from "react";
-import Card from "../ui/Card";
-import { Timeline, TimelineItem } from "../ui/timeline";
+import Card from "./ui/Card";
+import { Timeline, TimelineItem } from "./ui/timeline";
 import { instructorData } from "@/data";
 
 export default function InstructorCard() {

@@ -68,6 +68,10 @@ const InternshipCard: FC<InternshipCardProps> = ({
               width={250}
               height={250}
               className="object-contain border border-[#797CBB] rounded-2xl"
+              style={{
+                maxWidth: "100%",
+                height: "auto",
+              }}
             />
             {hoveredImage === altText1 && (
               <div className="absolute -top-4 right-2 bg-black/[0.2] py-0.5 px-1.5 rounded-2xl backdrop-blur-[6px] transition-all duration-200">
@@ -88,6 +92,10 @@ const InternshipCard: FC<InternshipCardProps> = ({
               width={250}
               height={250}
               className="object-contain border border-[#797CBB] rounded-2xl"
+              style={{
+                maxWidth: "100%",
+                height: "auto",
+              }}
             />
             {hoveredImage === altText2 && (
               <div className="absolute -top-4 right-2 bg-black/[0.2] py-0.5 px-1.5 rounded-2xl backdrop-blur-[6px] transition-all duration-200">

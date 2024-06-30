@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { FC, useState } from "react";
 
 interface TooltipProps {
@@ -26,7 +26,10 @@ const Tooltip: FC<TooltipProps> = ({ title, image, bgColor }) => {
           src={image}
           alt={title}
           className="w-full h-full overflow-clip object-contain"
-        />
+          style={{
+            maxWidth: "100%",
+            height: "auto"
+          }} />
       </div>
       {/* Title */}
       {active ? (

@@ -39,6 +39,10 @@ const Hero = () => {
             width={350}
             height={350}
             className="w-auto rounded-full"
+            style={{
+              maxWidth: "100%",
+              height: "auto",
+            }}
           />
         </div>
       </div>

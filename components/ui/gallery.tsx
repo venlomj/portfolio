@@ -3,7 +3,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper/modules";
 import { galleryPictures } from "@/data";
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 export default function Gallery() {
   return (
@@ -25,7 +25,10 @@ export default function Gallery() {
               src={pic.pic}
               alt="my images"
               className="object-cover w-full h-full object-left-top"
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
           </SwiperSlide>
         ))}
       </Swiper>

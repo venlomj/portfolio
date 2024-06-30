@@ -32,7 +32,7 @@ const featuredData = [
     video: "https://youtu.be/C3n6_zg5hpE",
     credits: "venlomj + Felix",
     link: "https://www.youtube.com/watch?v=C3n6_zg5hpE",
-    desc: "Samen met mijn teamgenoot heb ik een mobiele app ontwikkeld met Augmented Reality (AR) voor verbeterde interacties met frisdranken. Gebruikers kunnen etiketten scannen voor extra info, producten beoordelen en hun collectie beheren. We implementeerden de AR-ervaring in de eerste app, Wikitude, waar gebruikers frisdranketiketten scannen voor gedetailleerde productinformatie en via een AR-overlay gegevens zoals herkomst en ingrediënten in de echte wereld kunnen bekijken en beoordelingen kunnen toevoegen. De tweede app vult dit aan met een homepagina, een overzicht van dranken met gebruikersbeoordelingen, gedetailleerde pagina's voor elke drank inclusief een inventaris van gescande items, en een backend ontwikkeld met Express.js. Dit project combineert geavanceerde AR-technologieën en mobiele mogelijkheden om gebruikers een interactieve ervaring te bieden bij het verkennen, beoordelen en beheren van frisdranken.",
+    desc: "Samen met mijn teamgenoot heb ik een mobiele AR-app ontwikkeld voor frisdranken. Gebruikers kunnen etiketten scannen voor extra informatie, producten beoordelen en hun collectie beheren. We implementeerden AR in Wikitude, waar gebruikers via een overlay details zoals herkomst en ingrediënten kunnen zien. De tweede app biedt een overzicht van dranken, beoordelingen, gedetailleerde pagina's en een backend met Express.js. Dit project biedt een interactieve ervaring met geavanceerde AR-technologieën.",
     client: "De leerkracht van Mobile Development in Flutter",
     img: MobileApp,
   },

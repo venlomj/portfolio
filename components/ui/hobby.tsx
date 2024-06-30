@@ -3,7 +3,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper/modules";
 import { myHobbies } from "@/data";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Header from "../cards/featured/header";
 import Tag from "../util/tag";
 
@@ -28,7 +28,10 @@ export default function Hobby() {
               src={hobby.pic}
               alt={hobby.title}
               className="object-cover w-full h-full object-left-top"
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
             <div className="absolute top-[65%] space-y-2">
               <Tag
                 text={hobby.title}
