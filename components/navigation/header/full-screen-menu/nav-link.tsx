@@ -43,7 +43,7 @@ const NavLink: FC<NavLinkProps> = ({ data, handleClick }) => {
       ></motion.div>
       <Link
         href={href}
-        className="text-[8vw] uppercase leading-[96%] font-bold text-primary-foreground"
+        className="text-[6vw] !sm:text-[8vw] uppercase leading-[96%] font-bold text-primary-foreground"
         onClick={handleClick}
       >
         {title}
