@@ -24,23 +24,25 @@ export default function Hobby() {
       >
         {myHobbies.map((hobby) => (
           <SwiperSlide key={hobby.id}>
-            <Image
-              src={hobby.pic}
-              alt={hobby.title}
-              className="object-cover w-full h-full object-left-top"
-              style={{
-                maxWidth: "100%",
-                height: "auto"
-              }} />
-            <div className="absolute top-[65%] space-y-2">
-              <Tag
-                text={hobby.title}
-                className="rounded-tl-2xl rounded-tr-2xl rounded-br-2xl rounded-bl-2xl text-2xl"
+            <div className="relative w-full h-full">
+              <Image
+                src={hobby.pic}
+                alt={hobby.title}
+                layout="fill" // Use fill layout to ensure the image covers the container
+                objectFit="cover" // Ensures the image covers the container without distortion
+                objectPosition="top left" // Adjust position as needed
+                className="rounded-2xl"
               />
-              {/* <Tag
-                text={hobby.text}
-                className="rounded-tr-2xl rounded-br-2xl rounded-bl-2xl bg-blue-400"
-              /> */}
+              <div className="absolute top-[65%] space-y-2">
+                <Tag
+                  text={hobby.title}
+                  className="rounded-tl-2xl rounded-tr-2xl rounded-br-2xl rounded-bl-2xl text-2xl"
+                />
+                {/* <Tag
+                  text={hobby.text}
+                  className="rounded-tr-2xl rounded-br-2xl rounded-bl-2xl bg-blue-400"
+                /> */}
+              </div>
             </div>
           </SwiperSlide>
         ))}
