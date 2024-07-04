@@ -26,8 +26,9 @@ const Hero = () => {
           />
         </h2>
         <p className="text-lg mt-4 max-w-md md:mt-4 sm:mt-4 xs:mt-4">
-          Ik ben student applicatieontwikkeling aan de Thomas More Hogeschool in
-          Geel. Hier kun je meer over mij te weten komen...
+          Ik ben eind juni 2024 afgestudeerd als Bachelor Toegepaste Informatica
+          aan de Thomas More Hogeschool in Geel. Ik ben fier dat ik me nu een
+          echte Software en Full Stack ontwikkelaar mag noemen.
         </p>
       </div>
       {/* RIGHT */}

@@ -16,13 +16,13 @@ export default function ResumeCard() {
   return (
     <Card className="md:h-full">
       <p className="text-lg xl:text-xl font-medium text-primary-foreground">
-        Vijf jaar geleden ben ik naar België gekomen om IT te studeren en mij te
-        verdiepen in het programmeren. Twee jaar geleden heb ik de
-        Graduaatsopleiding, Programmeren succesvol afgerond en doe momenteel het
-        verkorte traject van de IT-Factory, Appliaction Development. Ik heb deze
-        keuze gemaakt omdat deze richting aan de universiteit van Paramaribo
-        niet voldoende wordt aangeboden. Ik woon momenteel in Laakdal. Wil je
-        echt meer te weten komen over mij, kan je mij persoonlijk contacteren.
+        Vijf jaar geleden ben ik vanuit Suriname naar België gekomen om IT te
+        studeren. Ik heb deze keuze gemaakt omdat sommige specialisaties aan de
+        universiteit van Paramaribo niet worden aangeboden. Ik ben gestart met
+        de Graduaatopleiding Programmeren en heb deze succesvol afgerond. Daarna
+        heb ik het verkorte Bachelor-traject IT-Factory, Appliaction Development
+        aangevat. Sind juni 2024 ben ik afgestudeerd als Bachelor aan de Thomas
+        More Hogeschool te Geel.
       </p>
       {/* Signature */}
       <div>
@@ -42,7 +42,7 @@ export default function ResumeCard() {
         <div onClick={handleDownload}>
           <Button>
             <FaDownload />
-            Resume
+            CV
           </Button>
         </div>
       </div>
