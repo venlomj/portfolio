@@ -115,11 +115,10 @@ export default function ContactSection() {
               </div>
             </div>
             {/* Multiple select wrapper */}
-            <div className="flex flex-col gap-6">
+            {/* <div className="flex flex-col gap-6">
               <div className="space-y-6">
                 <h1 className="font-bold text-lg">Wat is uw budget ?</h1>
                 <div className="flex flex-wrap items-center justify-between mb-4 gap-8">
-                  {/* Budget options */}
                   {budgetOptions.map((budget) => (
                     <SelectInput
                       key={budget.id}
@@ -132,7 +131,7 @@ export default function ContactSection() {
                   ))}
                 </div>
               </div>
-            </div>
+            </div> */}
             {/* TextArea message */}
             <TextArea
               name="message"

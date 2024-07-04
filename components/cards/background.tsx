@@ -8,7 +8,7 @@ export default function Background() {
         Ik ben Murrel Venlo, een enthousiaste en ambitieuze IT-ontwikkelaar.
         &nbsp; Mijn{" "}
         <strong className="underline text-white">
-          passie voor technologie en programmeren
+          passie voor technologie en programmeren{" "}
         </strong>
         drijft me om constant bij te leren, te innoveren en mijn
         professionaliteit te verbeteren.
@@ -28,7 +28,7 @@ export default function Background() {
         </strong>{" "}
         Niet alleen technische vaardigheden, maar ook mijn vermogen om{" "}
         <strong className="underline text-white">
-          creatieve en effectieve oplossingen
+          creatieve en effectieve oplossingen{" "}
         </strong>
         te vinden voor complexe problemen wil ik aantonen.
       </p>
@@ -39,7 +39,7 @@ export default function Background() {
         </strong>
         Ik ben steeds op zoek naar{" "}
         <strong className="underline text-white">
-          nieuwe uitdagingen en mogelijkheden
+          nieuwe uitdagingen en mogelijkheden{" "}
         </strong>
         om te groeien en bij te dragen aan spannende projecten.
       </p>

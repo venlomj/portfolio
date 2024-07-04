@@ -16,7 +16,7 @@ export default function ResumeCard() {
   return (
     <Card className="md:h-full">
       <p className="text-lg xl:text-xl font-medium text-primary-foreground">
-        Vijf jaar geleden ben ik vanuit Suriname naar België gekomen om IT te
+        5 jaar geleden ben ik vanuit Suriname naar België gekomen om IT te
         studeren. Ik heb deze keuze gemaakt omdat sommige specialisaties aan de
         universiteit van Paramaribo niet worden aangeboden. Ik ben gestart met
         de Graduaatopleiding Programmeren en heb deze succesvol afgerond. Daarna

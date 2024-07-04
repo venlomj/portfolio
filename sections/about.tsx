@@ -43,7 +43,7 @@ export default function AboutSection() {
           </div>
         </div>
         {/* Fancy link */}
-        <div className="mt-12 text-center">
+        {/* <div className="mt-12 text-center">
           <a
             href="https://venlomj.sinners.be/"
             target="_blank"
@@ -52,7 +52,7 @@ export default function AboutSection() {
             Wil je meer weten over mij, klik hier{" "}
             <FiArrowUpRight className="inline-block ml-1" size={18} />
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
   );
