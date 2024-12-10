@@ -37,7 +37,7 @@ const socials = [
   },
   {
     icon: <FaGithub className="w-4 h-4" />,
-    link: "https://github.com/murrelvenlo",
+    link: "https://github.com/venlomj",
     username: "Murrel Venlo",
   },
   {
